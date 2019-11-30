@@ -2,6 +2,7 @@ Setup
 
 Setup git https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup. Create new directory called solutions within saleh/python/assignments/solutions and make a .py file for each of the solutions within the solutions directory.
 
+Install pyenv and use a more later version of python https://github.com/pyenv/pyenv#installation
 
 0. Write a program that takes a user input which is a number and the program outputs whether it is even or odd
  
