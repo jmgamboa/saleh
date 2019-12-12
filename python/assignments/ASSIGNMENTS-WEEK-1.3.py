@@ -1,10 +1,10 @@
-'''Given these items and prices
-    banana: price:4, inventory: 3
-    apple: price:2, inventory 2
-    orange: price 1.5, inventory 4
-    pear: price 3, inventory 2
+# Given these items and prices
+#     banana: price:4, inventory: 3
+#     apple: price:2, inventory 2
+#     orange: price 1.5, inventory 4
+#     pear: price 3, inventory 2
 
-    Write a program that promps the user for an item. The output will be the items price and inventory amount'''
+#     Write a program that prompt the user for an item. The output will be the items price and inventory amount
 
 Order = input(
     '(Menu: banana, apple, orange, pear)\n What fruit would you like? ')
@@ -24,6 +24,13 @@ orange = {
 pear = {
     'Price': 3,
     'Inventory': 2
+}
+
+SuperMarket = {
+    'banana': banana,
+    'apple': apple,
+    'orange': orange,
+    'pear': pear
 }
 
 if Order == 'banana':
