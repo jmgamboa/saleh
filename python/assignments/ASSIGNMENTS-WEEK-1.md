@@ -30,8 +30,17 @@ Install pyenv and use a more later version of python https://github.com/pyenv/py
    the withdraw miminum has to be at least 10 dollars, with an added fee of 2 dollars applied to the balance
    You cannot withdraw more than the balance plus the fee. (You cannot over draft). If the user attemps to, the programs alerts the user of insufficient funds
 
+   Also implement a username and pincode to your class such that you can not withddraw or deposit money if the username an pincode are incorrect
+
    For the sake of simplicity do not worry about decimals / floats. 
 
    inspecting an insantiated objects balance should reflect the correct balance
+
+   Part 2
+
+   Leveraging your class, write a program that allows you to input commands: Exit, Withdraw, Deposit
+
+   The program prompts a user to create an account with a username and password. They then can provide which commands they want and perform the correlating action. Withdraw accepts username and pincode and performs the draw of funds to the balance and deposit prompts for the same parameters but puts money into the balance. Exit command will exit. 
+
 
 
