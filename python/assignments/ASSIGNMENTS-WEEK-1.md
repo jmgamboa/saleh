@@ -1,4 +1,4 @@
-Setup
+                                                                                                                                                                                                                                                                                                                                                                                                      Setup
 
 Setup git https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup. Create new directory called solutions within saleh/python/assignments/solutions and make a .py file for each of the solutions within the solutions directory.
 
@@ -8,7 +8,14 @@ Install pyenv and use a more later version of python https://github.com/pyenv/py
  
 1. Write a program that prompts two different questions. First asks the users name. The second asks the year they were born. The output of the program greets the user by name, states their age, and if they are old enough to drink in the United States
 
-2. Write a program that takes 2 lists and returns a new list that contains all the elements of the first list minus all the duplicates.
+2. Write a program that takes 2 lists and returns a new list that contains all the elements of the first list minus all the duplicates. 
+
+ex 
+first list [1, 2, 3, 4, 5]
+second list [2, 3, 4, 5]
+
+output = [1]
+
 
 3. Given these items and prices
     banana: price:4, inventory: 3
