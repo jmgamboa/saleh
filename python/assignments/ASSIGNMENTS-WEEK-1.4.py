@@ -14,6 +14,8 @@
 
 #    inspecting an instantiated objects balance should reflect the correct balance
 
+import pdb
+
 
 class BankAccount:
 
@@ -23,11 +25,11 @@ class BankAccount:
         self.balance = balance
 
     def deposit(self, code, amount):
-        if code == self.passcode:
+        if code != self.passcode:
+            print(f'Invalid code, try again')
+        else:
             self.balance += amount
             print(f'Deposit granted')
-        else:
-            print(f'Invalid code, try again')
 
     def withdraw(self, code, amount):
         if code == self.passcode:
@@ -43,10 +45,22 @@ class BankAccount:
         else:
             print(f'Invalid code, try again')
 
-        return self.balance
 
-
-new_account = BankAccount('Jack', 1234, 1000)
-new_account.deposit(5555, 200)
-new_account.withdraw(1234, 10)
-print(new_account.balance)
+commands = ['exit', 'new account', 'deposit', 'withdraw']
+exit = False
+while exit == False:
+    command = input(
+        f'What would you like to do?\n Exit\n New account\n Deposit\n Withdraw\n Please enter your command: ')
+    if command == commands[0]:
+        exit = True
+    elif command == commands[1]:  # Create new account
+        username = input(f'Enter Username: ')
+        passcode = input(f'Enter Passcode: ')
+        balance = input(f'Insert balance: ')
+        account = BankAccount(username, passcode, balance)
+    elif command == commands[2]:
+        result = (input(f'Please enter passcode: '),
+                  input(f'Please insert deposit amount: '))#this inputs and pass results to deposit
+        account.deposit(code=result[0], amount=result[1])#this calls the function 
+    elif command == commands[3]:
+        account.withdraw = (input(f'Please enter passcode: '))
