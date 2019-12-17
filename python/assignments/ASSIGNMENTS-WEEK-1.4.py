@@ -14,22 +14,20 @@
 
 #    inspecting an instantiated objects balance should reflect the correct balance
 
-import pdb
-
 
 class BankAccount:
 
     def __init__(self, user, passcode, balance):
         self.user = user
         self.passcode = passcode
-        self.balance = balance
+        self.balance = int(balance)
 
     def deposit(self, code, amount):
-        if code != self.passcode:
-            print(f'Invalid code, try again')
-        else:
-            self.balance += amount
+        if code == self.passcode:
+            self.balance += int(amount)
             print(f'Deposit granted')
+        else:
+            print(f'Invalid code, try again')
 
     def withdraw(self, code, amount):
         if code == self.passcode:
@@ -46,21 +44,28 @@ class BankAccount:
             print(f'Invalid code, try again')
 
 
-commands = ['exit', 'new account', 'deposit', 'withdraw']
+commands = ['new account', 'deposit', 'withdraw', 'balance', 'exit']
 exit = False
 while exit == False:
     command = input(
-        f'What would you like to do?\n Exit\n New account\n Deposit\n Withdraw\n Please enter your command: ')
-    if command == commands[0]:
-        exit = True
-    elif command == commands[1]:  # Create new account
-        username = input(f'Enter Username: ')
-        passcode = input(f'Enter Passcode: ')
+        f'What would you like to do?\n new account\n deposit\n withdraw\n balance\n exit\nPlease enter your command: ')
+    if command == commands[0]:  # Create new account
+        username = input(f'Enter username: ')
+        passcode = input(f'Enter passcode: ')
         balance = input(f'Insert balance: ')
         account = BankAccount(username, passcode, balance)
+    elif command == commands[1]:
+        # this inputs and pass results to deposit
+        result = (input(f'Please enter passcode: '),
+                  input(f'Please insert deposit amount: '))
+        # this calls the function
+        account.deposit(code=result[0], amount=result[1])
     elif command == commands[2]:
         result = (input(f'Please enter passcode: '),
-                  input(f'Please insert deposit amount: '))#this inputs and pass results to deposit
-        account.deposit(code=result[0], amount=result[1])#this calls the function 
+                  input(f'Please insert withdraw amount: '))
+        account.withdraw(code=result[0], amount=result[1])
     elif command == commands[3]:
-        account.withdraw = (input(f'Please enter passcode: '))
+        print(balance)
+    else:
+        command == commands[4]
+        exit = True
