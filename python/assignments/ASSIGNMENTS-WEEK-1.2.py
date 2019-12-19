@@ -26,4 +26,5 @@ for nums in newList:
         dup_nums.add(nums)
 
 # Output the unique numbers from newList
+print(newList)
 print(uniq_nums)
