@@ -1,8 +1,8 @@
 0. Enhance your existing ATM program. 
  - Implement a check balance function option in your program. 
- - The new program should also implement 2 new different kinds of bank accounts
+ - The new program should implement 2 new bank accounts
  - The program should allow them to pick which account they would like to open
- - The following are the custom of these accounts
+ - The following are the custom attributes of these accounts
     - Chase account
         - no withdrawl fee
         - allows you to withdraw into the negatives
