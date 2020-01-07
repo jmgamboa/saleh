@@ -1,4 +1,4 @@
-0. Enhance your existing ATM program. 
+<!-- 0. Enhance your existing ATM program. 
  - Implement a check balance function option in your program. 
  - The new program should implement 2 new bank accounts
  - The program should allow them to pick which account they would like to open
@@ -21,4 +21,4 @@
  - Find the longest length between order date and ship date
  - Find the most profitable Region
  
-2. Set up a new directory with its own virtual environment and requirments.txt Install the packages requests latest version. and flake8 version 3.7.7. The packages should be seen when you pip freeze within the virtual environment but not when you exit. 
+2. Set up a new directory with its own virtual environment and requirments.txt Install the packages requests latest version. and flake8 version 3.7.7. The packages should be seen when you pip freeze within the virtual environment but not when you exit.  -->
