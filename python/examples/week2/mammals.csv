@@ -1,0 +1,4 @@
+id,species,has_hair,limbs
+0,whale,false,2
+1,bear,true,4
+2,human,true,4
